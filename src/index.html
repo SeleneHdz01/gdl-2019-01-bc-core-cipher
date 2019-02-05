@@ -2,14 +2,57 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Proyect Cipher</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
+    
+</head>
   <body>
-    <div id="root">
-      <h1>Prueba Git!</h1>
-    </div>
+     
+    <header>
+      <img src="" alt="">
+      <h1>Message Private For Friends</h1>
+    </header>
+  <!--Primera Pantalla-->
+  
+    <section id="homePage" class="sectionsOne">
+    
+      <p id="greeting">¡Hola!</p>
+      <p id="description">Bienvenid@ a MPFF este es un sitio hecho para tí, 
+            donde puedes generar un mensaje secreto para tus amig@s 
+            y sólo ell@s sabrá su significado. ¡Atrevete a probarlo!</p>
+      <button onclick="sectionTwo()">COMENZAR</button>
+   
+    </section>
+  
+    <!--Segunda Pantalla-->
+
+  <section id="appPage" hidden class = "sectionTwo">
+
+      <p class="instructions">Instrucciones</p>
+      <ol class = "instructionsLi">
+        <li value="1">Ingresa cualquier número para generar tu clave.</li>
+        <li 2>Ingresa el mensaje que quieres ocultar.</li>
+        <li 3>Presiona el botón "Cifrar" que ocultará tu mensaje.</li>
+        <li 4>Presiona el botón "Descifrar" que mostrará tu mensaje.</li>
+        <li 5>Presiona el botón "Limpiar" si decidiste modificar tu mensaje o "Salir" para terminar .</li>
+      </ol>
+      <p>Clave:  <input  id="key"></p><br><br>
+      <input  id="input">Aquí introduce tu mensaje</p>
+      <p></p>
+      <p>Aquí muestras resultado</p>
+      <p id = "result"></p>
+      <button id = "btnCipher">CIFRAR</button><br><br>
+      <button id = "btnDecipher" >DESCIFRAR</button><br><br>
+      <button id = "btnClear">LIMPIAR</button>
+      <button id = "exit" >SALIR</button>
+    
+    </section>
+  
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
+    
+  
   </body>
 </html>
+
