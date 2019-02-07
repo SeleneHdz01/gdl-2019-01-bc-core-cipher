@@ -5,11 +5,11 @@ encode:  (offset, string) =>{
    
     for(let i=0; i<string.length; i++){
       string[i].charCodeAt();
-      let posicion = ((string[i].charCodeAt() - 65 + offset) % 26 + 65);
-      let nletter = String.fromCharCode(posicion);
-
-      console.log (nletter)
+      let position = ((string[i].charCodeAt() - 65 + offset) % 26 + 65);
+      let newMessage = String.fromCharCode(position);
+      message += newMessage;
     }
+    return message; 
   },
   decode: (offset, string) =>{
     let message = '';
@@ -17,9 +17,9 @@ encode:  (offset, string) =>{
     for(let i=0; i<string.length; i++){
       string[i].charCodeAt();
       let position = ((string[i].charCodeAt() + 65 - offset) % 26 + 65);
-      let nletter = String.fromCharCode(position);
-
-      console.log (nletter)
+      let newMessage = String.fromCharCode(position);
+      message += newMessage;
     }
+    return message; 
   }
 };
