@@ -1,0 +1,75 @@
+
+/*.logo{
+    background: url('img/imgCif.png');
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    
+    
+}*/
+h1 {
+    background-color: rgb(32, 204, 175);
+    word-spacing: 25px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 35px;
+    line-height: 36px;
+    color: rgb(192, 88, 170);
+    background-color: rgb(32, 204, 175);
+   
+    }
+
+body{
+    background-color: rgb(32, 204, 175);
+    
+}
+.sectionOne{
+   
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+    font-size: 25px;
+    line-height: 25px;
+    background-color: rgb(32, 204, 175);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.btnStart{
+    background-color: rgb(245, 167, 180);
+    color:white;
+    display: inline-block;
+    padding: .5rem;
+    text-align: center;
+    height: auto;
+    border-radius: 10px;
+    border: none;
+
+}
+
+.sectionTwo{
+    text-align: justify;
+    font-family: sans-serif;
+    color: white;
+    font-size: 17px;
+    line-height: 25px;
+    background-color: rgb(32, 204, 175);
+    
+}
+
+.btnOne{
+    background-color: rgb(245, 167, 180);
+    color:white;
+    display: inline-block;
+    padding: .5rem;
+    text-align: center;
+    height: auto;
+    border-radius: 10px;
+    border: none;
+}
+.boxes{
+
+}
+    
+

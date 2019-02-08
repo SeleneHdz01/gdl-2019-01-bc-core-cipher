@@ -1,9 +1,11 @@
-window.onload = inicio;
+
 const sectionTwo = ()=> {
     const screenOne= document.getElementById('homePage');
     const screenTwo = document.getElementById('appPage');
     screenOne.style.display = 'none';
-    screenTwo.style.display = 'block';   
+    screenTwo.style.display = 'block'; 
+    
+
   };
     document.getElementById('sectionTwo').addEventListener('click',sectionTwo);
 //const btnCipher=()=>{
@@ -29,19 +31,19 @@ const funcBtnTwo = document.getElementById('btnDecipher');
         document.getElementById('result').innerHTML = window.cipher.decode(parseInt(offset), string);
 
 });
-const exit = ()=> {
-    const screenOne= document.getElementById('homePage');
-    const screenTwo = document.getElementById('appPage');
-    screenOne.style.display = 'block';
-    screenTwo.style.display = 'none';   
-  };
-    document.getElementById('exit').addEventListener('click',exit);
+   
+const clearBox = ()=> {
+    document.getElementById('record').reset();
+     }
+    document.getElementById('clear').addEventListener('click', clearBox);  
 
-    function inicio(){
-        document.getElementById("clear").addEventListener('click',clear);
-    }
     
-    function clear(){
-        let activo = document.activeElement.id;
-        activo.innerHTML = ' ';
-    }
+const exit = ()=> {
+        const screenOne= document.getElementById('homePage');
+        const screenTwo = document.getElementById('appPage');
+        screenOne.style.display = 'block';
+        screenTwo.style.display = 'none';   
+        location.reload();
+      };
+        document.getElementById('exit').addEventListener('click',exit);
+    

@@ -7,45 +7,50 @@
     
 </head>
   <body>
-     
+
+    
     <header>
       
-      <h1>Message Private For Friends</h1>
+    <div id = "logo" class = "logo">
+   <img src="img/imgCif copia (1).png" width="150"/> 
+    </div>
     </header>
   <!--Primera Pantalla-->
   
-    <section id="homePage" class="sectionsOne">
-    
-      <p id="greeting">¡Hola!</p>
-      <p id="description">Bienvenid@ a MPFF este es un sitio creado para generar mensajes secretos 
-            y obsequiarlo a tus amig@s, sólo ell@s podran saber el significado. ¡Atrevete a probarlo!</p>
-      <button id="sectionTwo">COMENZAR</button>
+    <section id="homePage" class="sectionOne">
+      <h1>Private Message For Friends</h1>
+      <!--<p id="greeting">¡Hola!</p>-->
+      <p id="description">Bienvenid@ a PMFF, este es un sitio creado para generar mensajes secretos 
+            y podrás obsequiarlo a tus amig@s, sólo ell@s podran saber su significado. ¡Atrevete a probarlo!</p>
+      <button id="sectionTwo" class = "btnStart">COMENZAR</button> 
    
     </section>
   
     <!--Segunda Pantalla-->
 
   <section id="appPage"  hidden class = "sectionTwo">
+      
+      <ul class = "sectionTwo">
+        <li type="circle">INSTRUCCIONES</li>
+        <li >Elige un número del 1 al 33 para generar tu clave.</li>
+        <li >Ingresa el mensaje que quieres ocultar.</li>
+        <li >Presiona el botón "CIFRAR" que convertirá tu mensaje en uno nuevo.</li>
+        <li >Copia el mensaje de la caja "RESULTADO" y pegalo en la caja "MENSAJE".</li>
+        <li >Presiona el botón "DECIFRAR" que mostrará tu mensaje inicial.</li>
+        <li >Presiona el botón "Limpiar" si decidiste modificar tu mensaje o "SALIR" para regresar a la página principal.</li>
+      </ul>
+     
+    <p>CLAVE<input  type = "number" id="key" min = "1" max = "33"class="boxes"></p>
 
-      <p class="instructions">Instrucciones</p>
-      <ol class = "instructionsLi">
-        <li value="1">Ingresa cualquier número para generar tu clave.</li>
-        <li 2>Ingresa el mensaje que quieres ocultar.</li>
-        <li 3>Presiona el botón "Cifrar" que ocultará tu mensaje.</li>
-        <li 4>Presiona el botón "Descifrar" que mostrará tu mensaje.</li>
-        <li 5>Presiona el botón "Limpiar" si decidiste modificar tu mensaje o "Salir" para terminar .</li>
-      </ol>
-      <p>Clave:  <input  type = "number" id="key" min = "1" max = "33"></p><br><br>
-      <p>Aquí introduce tu mensaje</p>
-      <input  id="payInMess">
-      <p>Aquí muestras resultado</p>
-      <textarea id = "result"></textarea><br><br>
-    
-      <button id = "btnCipher">CIFRAR</button><br><br>
-      <button id = "btnDecipher" >DESCIFRAR</button><br><br>
-      <input type="button" id="clear" value="LIMPIAR">
-      <!--<button id = "btnClear">LIMPIAR</button>-->
-      <button id = "exit" >SALIR</button>
+    <form id= "record"  class="boxes">
+      <p>MENSAJE <input   id="payInMess" ></p>
+      </form>
+
+    <p>RESULTADO<textarea id = "result" class="boxes"></textarea></p>
+    <button id = "btnCipher" class= "btnOne">CIFRAR</button>
+    <button id = "btnDecipher" class= "btnOne">DESCIFRAR</button><br><br>
+    <input type="button" id="clear" value="LIMPIAR"class= "btnOne">
+    <button id = "exit" class= "btnOne">SALIR</button>
     
     </section>
   
@@ -53,7 +58,8 @@
     <script src="cipher.js"></script>
     <script src="index.js"></script>
     
-  
+ 
   </body>
+
 </html>
 
