@@ -34,7 +34,7 @@ const funcBtnTwo = document.getElementById('btnDecipher');
    
 const clearBox = ()=> {
     document.getElementById('record').reset();
-     }
+     };
     document.getElementById('clear').addEventListener('click', clearBox);  
 
     
